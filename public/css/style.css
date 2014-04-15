@@ -1,0 +1,77 @@
+body { font-size: 14px; }
+
+.bg {
+    background: url('http://127.0.0.1/foodr/public/images/bg.jpg') no-repeat center center;
+    position: fixed;
+    width: 100%;
+    height: 60%; /*same height as jumbotron */
+    top: 90px;
+    left: 0;
+    z-index: -1;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    height: 60%;
+    color: white;
+    background:transparent;
+}
+
+.jumbotron > h1 { text-shadow: black 0.3em 0.3em 0.3em; }
+
+.jumbotron > h1 { font-size: 28px; }
+.jumbotron > p { font-size: 14px; }
+
+@media screen and (min-width: 282px) {
+    .jumbotron > h1 { font-size: 30px; }
+    .jumbotron > p { font-size: 15px; }
+}
+
+@media screen and (min-width: 485px) {
+    .jumbotron > h1 { font-size: 44px; }
+    .jumbotron > p { font-size: 16px; }
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron > h1 { font-size: 52px; }
+    .jumbotron > p { font-size: 18px; }
+}
+
+@media screen and (min-width: 992px) {
+    .jumbotron > h1 { font-size: 64px; }
+    .jumbotron > p { font-size: 22px; }
+}
+
+@media screen and (min-width: 1200px) {
+    .jumbotron > h1 { font-size: 70px; }
+    .jumbotron > p { font-size: 24px; }
+}
+
+.media > img {
+    height: 120px;
+    width: 120px;
+}
+
+.page-header > small { display: none; }
+
+@media screen and (min-width: 460px) {
+    .page-header > small { display: inline; }
+}
+
+.media-body > h3 {
+    font-size: 1.4em;
+    margin-top: .4em; 
+}
+
+.media-body > p {
+    font-size: 1em;
+    display: block;
+    display: -webkit-box;
+    max-height: 4.2em;
+    line-height: 1.4em;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
